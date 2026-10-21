@@ -1,0 +1,236 @@
+/* esses são os resets basicos do site, * para falar que tudo etsra incluido, margin para apagar as margens automaticas dos navegadores
+padding para zerar o espaço interno, box sizing para caucular o tamanho dos blocos, é tipo o comando basico para começar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffc2e3; /* define a cor do fundo*/
+  font-family: 'Quicksand', sans-serif; /*importa a fonte*/
+  color: #555555; /*cor da fonte*/ 
+  display: flex; /*akinhamento*/
+  justify-content: center; /*horinzontal*/
+  align-items: center; /*vertical*/
+  padding: 30px 15px;/*margem de segurança*/
+}
+
+/* aqui eu fiz a caixa grandona branca onde todo o site ficou armazenado */
+.main-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+/* aqui é a Linha rosa superior e central */
+.top-line {
+  height: 4px;
+  background-color: #ff75b5;
+  border-radius: 2px;
+  margin-bottom: 25px;
+}
+/* essa é a fina*/ 
+
+.divider-line {
+  height: 1px;
+  background-color: #fce4ec;
+  margin: 30px 0;
+}
+
+/* comando basico da parte  superior  */
+.top-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+/*aqui é a caixinha liso,cacheado e ondulado*/
+.left-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*imagem das curvatura*/
+.img-curvaturas {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+/*estilizaçãlo dos botoes*/ 
+.btn-pink {
+  background-color: #ffa1c5;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-pink:hover {
+  background-color: #ff8ab7;
+  transform: translateY(-2px); /*quando passar o mouse em cima dos botoes, aumentar*/ 
+}
+
+/* caixinha para exibir o resumo dos tipos de cabelo ao clicar nos botões */
+.resumo-curvatura {
+  margin-top: 15px;
+  background-color: #fde8e8;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  font-size: 13.5px;
+  color: #555555;
+  line-height: 1.4;
+  text-align: center;
+  border: 1px dashed #ffa1c5;
+}
+
+/* Caixa dos Testes Capilares para mudar cor, espaço etc */
+.testes-box {
+  flex: 1;
+  background-color: #fde8e8;
+  border-radius: 15px;
+  padding: 25px;
+}
+ /*texto das caixas dos testes*/
+.testes-box h2 {
+  font-family: 'Playfair Display', serif;
+  color: #ff65a3;
+  font-size: 26px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+/*subtitulo*/ 
+.testes-box h3 {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #888888;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+/* parágrafos explicativos da porosidade */
+.testes-box p {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+/* deixa o título do tipo de porosidade em destaque */
+.testes-box p strong {
+  color: #444444;
+}
+/* seção que centraliza o botão grandão e a frase */
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0 20px;
+}
+/* estilo do botão grande "Comece o Cronograma" */
+.btn-pink-lg {
+  background-color: #ff52a1;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 36px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(255, 82, 161, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+/* efeito ao passar o mouse no botão grande */
+
+.btn-pink-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 82, 161, 0.4);
+}
+
+.frase-inspiracional {
+  font-family: 'Quicksand', sans-serif;
+  font-style: italic;
+  color: #777777;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* Seção do Cronograma Capilar (Tabela) */
+.cronograma-container {
+  border: 1.5px dashed #ffa1c5;
+  border-radius: 15px;
+  padding: 25px 20px;
+}
+
+.cronograma-container h2 {
+  font-family: 'Playfair Display', serif;
+  color: #ff65a3;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 12px 6px;
+  border: 1px solid #fde2e8;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+thead th {
+  background-color: #fde8e8;
+  color: #555555;
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+.col-semana {
+  background-color: #ffb1cb;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+tbody td {
+  color: #666666;
+  background-color: #ffffff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
+  
+  .main-card {
+    padding: 20px 15px;
+  }
+}

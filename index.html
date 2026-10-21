@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronograma capilar prototipo</title>
+   <!-- Esse link href serve para importar fontes externas do google para o codigo -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,400&display=swap"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esse link rel serve para linkar o arquivo que eu fiz em css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--essa parte criou a caixa branca do site-->
+  <div class="main-card">        
+
+      <!--Essa parte criou a linha rosa do site-->
+    <div class="top-line"></div>
+
+    <!-- Seção Superior: Imagem, Botões e Testes Capilares -->
+    <div class="top-section">
+      <div class="left-box">
+        <img src="tipos_de_cachos-6965848.webp" alt="Ilustração dos tipos de curvatura capilar do 1 ao 4C" class="img-curvaturas">
+        
+        <div class="btn-group">
+          <button type="button" class="btn-pink" data-tipo="liso">Liso</button>
+          <button type="button" class="btn-pink" data-tipo="ondulado">Ondulado</button>
+          <button type="button" class="btn-pink" data-tipo="cacheado">Cacheado</button>
+          <button type="button" class="btn-pink" data-tipo="crespo">Crespo</button>
+        </div>
+
+        <!-- Caixinha onde vai aparecer o resumo do cabelo ao clicar nos botões -->
+        <div id="resultado-curvatura" class="resumo-curvatura">
+          <p>Clique em um dos botões acima para ver as características de cada curvatura.</p>
+        </div>
+      </div>
+
+      <div class="testes-box">
+        <h2>Testes Capilares</h2>
+        <h3>TESTE DE POROSIDADE</h3>
+
+        <p><strong>Alta Porosidade:</strong> Absorve rapidamente a umidade.</p>
+        <p><strong>Média Porosidade:</strong> Retém água e nutrientes na medida certa.</p>
+        <p><strong>Baixa Porosidade:</strong> Cutículas fechadas, demora a absorver água.</p>
+      </div>
+    </div>
+
+    <!-- Seção do Botão Principal e Frase -->
+    <div class="cta-section">
+      <a href="#tabela-cronograma" class="btn-pink-lg">Comece o Cronograma</a>
+      <p class="frase-inspiracional"><em>Seu cabelo não precisa seguir padrão nenhum. Só precisa seguir você.</em></p>
+    </div>
+
+    <div class="divider-line"></div>
+
+    <!-- Seção do Cronograma Capilar -->
+    <div id="tabela-cronograma" class="cronograma-container">
+      <h2>Cronograma Capilar</h2>
+
+      <div class="table-wrapper">
+        <table> <!--para sinalizar que aqui é uma tabela -->
+          <thead> <!--aqui é o cabeçalho da tabela-->
+            <tr>
+              <th>Semana</th>
+              <th>Segunda</th>
+              <th>Terça</th>
+              <th>Quarta</th>
+              <th>Quinta</th>
+              <th>Sexta</th>
+              <th>Sábado</th>
+              <th>Domingo</th>
+            </tr>
+          </thead>
+          <tbody> <!--aqui é oque vai no corpo da tabela -->
+            <tr> <!--linhas da tabela -->
+              <th class="col-semana">1ª Sem<!--td é a coluna deve estar sempre dentro de uma tr--></th>
+              <td>Hidratação +<br>Rotina Noturna</td> 
+              <td>Umectação<br>Noturna</td>
+              <td>Nutrição + Rotina<br>Noturna</td>
+              <td>Acidificação</td>
+              <td>Hidratação +<br>Rotina Noturna</td>
+              <td>Reconstrução</td>
+              <td>Umectação Rápida<br>+ Rotina Noturna</td>
+            </tr>
+            <tr>
+              <th class="col-semana">2ª Sem</th>
+              <td>Nutrição</td>
+              <td>Hidratação +<br>Rotina Noturna</td>
+              <td>Umectação<br>Noturna</td>
+              <td>Acidificação</td>
+              <td>Nutrição +<br>Nutrição Leve</td>
+              <td>Hidratação</td>
+              <td>Hidratação</td>
+            </tr>
+            <tr>
+              <th class="col-semana">3ª Sem</th>
+              <td>Hidratação</td>
+              <td>Nutrição</td>
+              <td>Reconstrução</td>
+              <td>Descanso</td>
+              <td>Umectação (1-2h<br>antes)</td>
+              <td>Co-wash</td>
+              <td>Hidratação</td>
+            </tr>
+            <tr>
+              <th class="col-semana">4ª Sem</th>
+              <td>Nutrição</td>
+              <td>Acidificação</td>
+              <td>Acidificação +<br>Máscara Leve</td>
+              <td>Hidratação</td>
+              <td>Hidratação</td>
+              <td>Hidratação<br>Noturna</td>
+              <td>Hidratação +<br>Finalização</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link do arquivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
